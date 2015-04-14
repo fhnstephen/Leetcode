@@ -4,7 +4,7 @@ var largestNumber = function(num) {
        var bs = b.toString();
        return as + bs > bs + as ? -1 : 1;
     });
-    ans = num.join("");
+    var ans = num.join("");
     while (ans[0] == "0" && ans.length > 1) ans = ans.substr(1);
     return ans;
 };
